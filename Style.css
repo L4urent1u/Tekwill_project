@@ -1,0 +1,284 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+    background-color: #E6E1C5;
+}
+
+/* Antet */
+
+header {
+    background-color: #201E1F;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+    color: #E6E1C5;
+}
+
+header h1 {
+    padding-right: 10px;
+    color: #E6E1C5;
+}
+
+header span {
+    color: #9B1D20;
+}
+
+.topnav {
+    background-color: #201E1F;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.topnav a {
+    float: left;
+    color: #E6E1C5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #E6E1C5;
+    color: #201E1F;
+    transition: ease-in-out;
+    transition-duration: .5s;
+}
+
+.topnav a.active {
+    background-color: #4472CA;
+    color: #E6E1C5;
+}
+
+/* Despre */
+
+.about-us {
+    display: flex;
+}
+
+.inform {
+    text-align: start;
+    margin: 16px 32px;
+}
+
+.about-us h1 {
+    font-size: 4rem;
+    padding-bottom: 16px;
+    color: #201E1F;
+    text-align: center;
+}
+
+.about-us p {
+    color: #201E1F;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.about-us img {
+    width: 1125px;
+    margin-right: 10px;
+}
+
+/* Servicii */
+
+.services {
+    margin-bottom: 48px;
+}
+
+.nav-services {
+    margin-bottom: 0px;
+}
+
+.container img {
+    height: 300px;
+    width: 1879px;
+    object-fit: none;
+    object-position: 0 -400px;
+    filter: brightness(30%) blur(3px);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+
+.centered-top {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3rem;
+}
+
+.centered-bottom {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+.options img {
+    width: 200px;
+    padding: 20px;
+    filter: brightness(70%);
+}
+
+.options {
+    display: flex;
+    margin: 20px 450px;
+}
+
+.options div {
+    margin: auto;
+}
+
+.options h3 {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Contacte */
+
+.contact {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 100px;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-bottom: 34px;
+}
+
+
+.contact h2:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+}
+
+.field {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+    border-radius: 10%;
+}
+
+.field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    min-height: 150px;
+}
+
+.btn {
+    width: 20%;
+    padding: 0.5rem 1rem;
+    background-color: #4472CA;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 10%;
+    margin-bottom: 38px;
+}
+
+.btn:hover {
+    background-color: #4472CA;
+}
+
+.field:focus {
+    border: 2px solid rgba(30, 85, 250, 0.47);
+    background-color: #fff;
+}
+
+/* Footer */
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #201E1F;
+    padding: 30px 0;
+    display: flex;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #E6E1C5;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #4472CA;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a:hover {
+    color: #201E1F;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
